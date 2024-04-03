@@ -15,5 +15,6 @@ fs.writeFile(path.join("./.output/package.json"),
             console.error(err)
     })
 
-fs.copyFile(path.join("./pipe.js"), path.join("./.output/pipe.js"), () => {
-})
+fs.copyFile(path.join("./pipe.js"), path.join("./.output/pipe.js"), () => {})
+fs.copyFile(path.join("./README.MD"), path.join("./.output/README.MD"), () => {})
+fs.copyFile(path.join("./Licence.txt"), path.join("./.output/Licence.txt"), () => {})
