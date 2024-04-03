@@ -2,6 +2,19 @@
 import {fileURLToPath} from "node:url";
 import {dirname} from "node:path";
 
+/*
+ * Run the Ui 
+ * 
+ * Should only be called once since this task will listen to the task runners using both server and socket.
+ * 
+ * Options:
+ * 
+ * * --server [number]: Override the task runner server port.
+ * 
+ * * --socket [number]: Override the task runner socket port.
+ * 
+ * * --browser: Launch the browser automatically when the node server is ready.
+ */
 export const runUi = (options) => (data, vifSim) => {
     const child = child_process.spawn("node",
         [`./server/index.mjs --server ${data.serverPort} --socket ${data.socketPort} ${options.browser ? '--browser' : ''}`],

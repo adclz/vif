@@ -8,7 +8,7 @@ fs.writeFile(path.join("./.output/package.json"),
     "type": "module",
     "exports": 
      {
-        "./run": "./run.js"
+        "./run": "./pipe.js"
      }
 }`, err => {
         if (err)
