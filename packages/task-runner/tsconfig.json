@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "nodenext",
+      "resolveJsonModule": true,
+      "outDir": "dist",
+      "declaration": true,
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+          "@/*": [
+              "./*"
+          ],
+          "@/src": [
+            "./src"
+          ]
+      },
+  },
+  "tsc-alias": {
+      "verbose": false,
+      "resolveFullPaths": true
+  }
+}

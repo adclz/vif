@@ -1,0 +1,52 @@
+{
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "PowerShell -File node.ps1 && node ./fix-xterm.js && vitepress build docs && copy \"./_headers\" \"./docs/.vitepress/dist\"",
+    "docs:preview": "npx wrangler pages dev ./docs/.vitepress/dist",
+    "publish": "npx wrangler pages deploy ./docs/.vitepress/dist"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "vitepress-plugin-mermaid": "^2.0.16",
+    "vue": "^3.4.15"
+  },
+  "imports": {
+    "#source": "@vifjs/standard/source",
+    "#compiler": "@vifjs/standard/compiler",
+    "#pou": "@vifjs/standard/pou",
+    "#primitives": "@vifjs/standard/types/primitives",
+    "#complex": "@vifjs/standard/types/complex",
+    "#utilities": "@vifjs/standard/types/utilities",
+    "#unit": "@vifjs/standard/operations/unit",
+    "#program-control": "@vifjs/standard/operations/program-control",
+    "#basics": "@vifjs/standard/operations/basics",
+    "#math": "@vifjs/standard/operations/math",
+    "#binary": "@vifjs/standard/operations/binary"
+  },
+  "dependencies": {
+    "@chialab/esbuild-plugin-meta-url": "^0.18.0",
+    "@codesandbox/nodebox": "^0.1.9",
+    "@shikijs/vitepress-twoslash": "1.0.0-beta.0",
+    "@vifjs/language-builder": "workspace:*",
+    "@vifjs/sim-web": "0.0.1-alpha.2",
+    "@vifjs/standard": "workspace:^",
+    "@vifjs/task-runner": "workspace:^",
+    "@webcontainer/api": "^1.1.9",
+    "esbuild-plugin-ignore": "^1.1.1",
+    "mermaid": "^10.8.0",
+    "node-watch": "^0.7.4",
+    "unocss": "^0.58.4",
+    "vite-plugin-cjs-interop": "^2.0.5",
+    "vite-plugin-wasm": "^3.3.0",
+    "vitepress": "1.0.0-rc.40",
+    "vitepress-plugin-back-to-top": "^1.0.1",
+    "vitest": "^1.3.1",
+    "vue-tabler-icons": "2.21.0",
+    "vuestic-ui": "^1.8.8",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "version": "0.0.1-alpha.0"
+}

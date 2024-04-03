@@ -1,0 +1,1 @@
+﻿export {Assign, Compare, Calc, Call} from "@vifjs/language-builder/operations/basics"

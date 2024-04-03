@@ -1,0 +1,67 @@
+{
+  "name": "@vifjs/s7-1500",
+  "version": "0.0.1-alpha.0",
+  "type": "module",
+  "description": "Standard Language pack",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.prod.json && tsc-alias",
+    "vitest:ui": "vitest --coverage --ui",
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "Adrien Clauzel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/jsdom": "^21.1.1",
+    "@types/lodash.clonedeep": "^4.5.8",
+    "@types/mocha": "^10.0.1",
+    "@types/sinon": "^10.0.13",
+    "@types/stack-trace": "^0.0.33",
+    "chai": "^4.3.7",
+    "madge": "^6.0.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.2",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.4",
+    "tsconfig-paths": "^4.1.2",
+    "tsx": "^3.12.7"
+  },
+  "imports": {
+    "#source": "./src/source/index.js",
+    "#compiler": "./src/source/compiler.js",
+    "#pou": "./src/wrap/pou/index.js",
+    "#primitives": "./src/wrap/types/primitives/index.js",
+    "#complex": "./src/wrap/types/complex/index.js",
+    "#unit": "./src/wrap/operations/unit.js",
+    "#program-control": "./src/wrap/operations/program-control.js",
+    "#basics": "./src/wrap/operations/basics.js",
+    "#math": "./src/wrap/operations/math.js",
+    "#binary": "./src/wrap/operations/binary.js"
+  },
+  "exports": {
+    ".": "./dist",
+    "./source": "./dist/source/index.js",
+    "./compiler": "./dist/source/compiler.js",
+    "./pou": "./dist/wrap/pou/index.js",
+    "./types/primitives": "./dist/wrap/types/primitives/index.js",
+    "./types/complex": "./dist/wrap/types/complex/index.js",
+    "./operations/unit": "./dist/wrap/operations/unit.js",
+    "./operations/program-control": "./dist/wrap/operations/program-control.js",
+    "./operations/basics": "./dist/wrap/operations/basics.js",
+    "./operations/math": "./dist/wrap/operations/math.js",
+    "./operations/binary": "./dist/wrap/operations/binary.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "./dist"
+  ],
+  "dependencies": {
+    "@vifjs/sim-node": "latest",
+    "@vifjs/language-builder": "workspace:*",
+    "@vitest/coverage-istanbul": "^1.2.2",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.2.2"
+  }
+}

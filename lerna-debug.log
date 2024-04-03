@@ -1,0 +1,121 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   push: false,
+0 silly argv   lernaVersion: '8.1.2',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.2
+2 verbose packageConfigs Package manager "pnpm" detected. Resolving packages using `pnpm-workspace.yaml`.
+3 verbose rootPath C:\Users\clauz\OneDrive\Bureau\Fever_ulti\Vif
+4 info current version 0.1.0
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly hasTags
+10 verbose hasTags false
+11 info Assuming all packages changed
+12 verbose updated undefined
+13 verbose updated init-vif
+14 verbose updated init-vif-provider
+15 verbose updated @vifjs/language-builder
+16 verbose updated @vifjs/s7-1200
+17 verbose updated @vifjs/s7-1500
+18 verbose updated @vifjs/standard
+19 verbose updated @vifjs/task-runner
+20 verbose updated @vifjs/ui
+21 verbose updated undefined
+22 verbose updated @vifjs/language-server
+23 verbose updated test
+24 verbose updated vif-language-server
+25 info version Skipping unversioned private package undefined
+26 info version Skipping unversioned private package undefined
+27 info version Skipping unversioned private package "test"
+28 verbose git-describe undefined => "d5f7377"
+29 silly git-describe parsed => {"refCount":"6","sha":"d5f7377","isDirty":false}
+30 info execute Skipping git push
+31 info execute Skipping releases
+32 silly lifecycle No script for "preversion" in "vif", continuing
+33 silly lifecycle No script for "preversion" in "init-vif", continuing
+34 silly lifecycle No script for "preversion" in "init-vif-provider", continuing
+35 silly lifecycle No script for "preversion" in "@vifjs/language-builder", continuing
+36 silly lifecycle No script for "preversion" in undefined, continuing
+37 silly lifecycle No script for "preversion" in "@vifjs/language-server", continuing
+38 verbose version init-vif has no lockfile. Skipping lockfile update.
+39 verbose version init-vif-provider has no lockfile. Skipping lockfile update.
+40 verbose version @vifjs/language-server has no lockfile. Skipping lockfile update.
+41 verbose version @vifjs/language-builder has no lockfile. Skipping lockfile update.
+42 verbose version undefined has no lockfile. Skipping lockfile update.
+43 silly lifecycle No script for "version" in "@vifjs/language-builder", continuing
+44 silly lifecycle No script for "preversion" in "@vifjs/s7-1200", continuing
+45 silly lifecycle No script for "preversion" in "@vifjs/s7-1500", continuing
+46 silly lifecycle No script for "preversion" in "@vifjs/standard", continuing
+47 silly lifecycle No script for "version" in undefined, continuing
+48 silly lifecycle No script for "version" in "init-vif-provider", continuing
+49 silly lifecycle No script for "version" in "init-vif", continuing
+50 silly lifecycle No script for "version" in "@vifjs/language-server", continuing
+51 silly lifecycle No script for "preversion" in "vif-language-server", continuing
+52 verbose version @vifjs/s7-1500 has no lockfile. Skipping lockfile update.
+53 verbose version @vifjs/s7-1200 has no lockfile. Skipping lockfile update.
+54 verbose version @vifjs/standard has no lockfile. Skipping lockfile update.
+55 verbose version vif-language-server has no lockfile. Skipping lockfile update.
+56 silly lifecycle No script for "version" in "@vifjs/standard", continuing
+57 silly lifecycle No script for "preversion" in "@vifjs/task-runner", continuing
+58 silly lifecycle No script for "version" in "@vifjs/s7-1500", continuing
+59 silly lifecycle No script for "version" in "@vifjs/s7-1200", continuing
+60 silly lifecycle No script for "version" in "vif-language-server", continuing
+61 verbose version @vifjs/task-runner has no lockfile. Skipping lockfile update.
+62 silly lifecycle No script for "version" in "@vifjs/task-runner", continuing
+63 silly lifecycle No script for "preversion" in undefined, continuing
+64 silly lifecycle No script for "preversion" in "@vifjs/ui", continuing
+65 silly lifecycle No script for "preversion" in "test", continuing
+66 verbose version @vifjs/ui has no lockfile. Skipping lockfile update.
+67 verbose version undefined has no lockfile. Skipping lockfile update.
+68 verbose version test has no lockfile. Skipping lockfile update.
+69 silly lifecycle No script for "version" in "@vifjs/ui", continuing
+70 silly lifecycle No script for "version" in undefined, continuing
+71 silly lifecycle No script for "version" in "test", continuing
+72 silly lifecycle No script for "version" in "vif", continuing
+73 verbose version Updating root pnpm-lock.yaml
+74 silly gitAdd [
+74 silly gitAdd   'packages/language-builder/package.json',
+74 silly gitAdd   'packages/volar/package.json',
+74 silly gitAdd   'packages/init-vif-provider/package.json',
+74 silly gitAdd   'packages/init-vif/package.json',
+74 silly gitAdd   'packages/volar/packages/language-server/package.json',
+74 silly gitAdd   'packages/standard/package.json',
+74 silly gitAdd   'packages/s7/1500/package.json',
+74 silly gitAdd   'packages/s7/1200/package.json',
+74 silly gitAdd   'packages/volar/packages/vscode/package.json',
+74 silly gitAdd   'packages/task-runner/package.json',
+74 silly gitAdd   'packages/ui/package.json',
+74 silly gitAdd   'packages/docs/package.json',
+74 silly gitAdd   'packages/volar/packages/sample/package.json',
+74 silly gitAdd   'lerna.json',
+74 silly gitAdd   'pnpm-lock.yaml'
+74 silly gitAdd ]
+75 error Error: Command failed with exit code 1: git add -- packages/language-builder/package.json packages/volar/package.json packages/init-vif-provider/package.json packages/init-vif/package.json packages/volar/packages/language-server/package.json packages/standard/package.json packages/s7/1500/package.json packages/s7/1200/package.json packages/volar/packages/vscode/package.json packages/task-runner/package.json packages/ui/package.json packages/docs/package.json packages/volar/packages/sample/package.json lerna.json pnpm-lock.yaml
+75 error warning: in the working copy of 'lerna.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/docs/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/init-vif-provider/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/init-vif/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/language-builder/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/s7/1200/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/s7/1500/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/standard/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/task-runner/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/ui/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/volar/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/volar/packages/language-server/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error warning: in the working copy of 'packages/volar/packages/vscode/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error The following paths are ignored by one of your .gitignore files:
+75 error pnpm-lock.yaml
+75 error hint: Use -f if you really want to add them.
+75 error hint: Turn this message off by running
+75 error hint: "git config advice.addIgnoredFile false"
+75 error warning: in the working copy of 'packages/volar/packages/sample/package.json', LF will be replaced by CRLF the next time Git touches it
+75 error     at makeError (C:\Users\clauz\OneDrive\Bureau\Fever_ulti\Vif\node_modules\.pnpm\execa@5.0.0\node_modules\execa\lib\error.js:59:11)
+75 error     at handlePromise (C:\Users\clauz\OneDrive\Bureau\Fever_ulti\Vif\node_modules\.pnpm\execa@5.0.0\node_modules\execa\index.js:114:26)
+75 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+75 error     at async VersionCommand.updatePackageVersions (C:\Users\clauz\OneDrive\Bureau\Fever_ulti\Vif\node_modules\.pnpm\lerna@8.1.2\node_modules\lerna\dist\index.js:8483:11)
+75 error     at async Promise.all (index 0)
