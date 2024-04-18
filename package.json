@@ -1,0 +1,19 @@
+{
+  "name": "vif",
+  "private": true,
+  "packageManager": "pnpm@8.14.0",
+  "scripts": {
+    "test": "lerna run test",
+    "update:vifsim": "lernaupdate --non-interactive --dependency @vifjs/sim-web && lernaupdate --non-interactive --dependency @vifjs/sim-node",
+    "prerelease": "lerna version --no-push",
+    "publish": "lerna publish --npm-tag alpha"
+  },
+  "resolutions": {
+    "@types/node": "18.11.9"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "lerna": "^8.1.2",
+    "lerna-update-wizard": "^1.1.2"
+  }
+}

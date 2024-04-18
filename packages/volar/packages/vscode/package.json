@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "name": "vif-language-server",
+  "version": "0.0.1-alpha.0",
+  "categories": [
+    "Programming Languages"
+  ],
+  "displayName": "Vif Language Features",
+  "description": "Vif Language Features",
+  "author": "volarjs",
+  "publisher": "volarjs",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "activationEvents": [
+    "onLanguage:typescript"
+  ],
+  "main": "./dist/client.js",
+  "scripts": {
+    "build": "node scripts/build -- --minify",
+    "watch": "npm run build -- --watch",
+    "pack": "npm run build && vsce package --pre-release",
+    "release": "npm run build && vsce publish --pre-release"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@vifjs/language-server": "workspace:*",
+    "@volar/language-server": "~2.1.0",
+    "@volar/vscode": "~2.1.0",
+    "esbuild": "latest",
+    "vsce": "latest",
+    "vscode-languageclient": "^9.0.1"
+  }
+}

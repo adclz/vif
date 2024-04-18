@@ -1,0 +1,5 @@
+﻿packages:
+  - 'packages/*'
+  - 'packages/s7/*'
+  - 'packages/create-vif/test'
+  - 'packages/volar/packages/*'

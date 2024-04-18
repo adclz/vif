@@ -1,0 +1,58 @@
+{
+  "name": "@vifjs/language-builder",
+  "version": "0.0.1-alpha.1",
+  "type": "module",
+  "description": "Language builder",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.prod.json && tsc-alias",
+    "vitest:ui": "vitest --ui",
+    "test": "vitest run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "Adrien Clauzel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/stack-trace": "^0.0.33",
+    "@vitest/coverage-istanbul": "^1.2.2",
+    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/ui": "^1.4.0",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.4",
+    "tsconfig-paths": "^4.1.2",
+    "tsx": "^3.12.7",
+    "typescript": "^5.2.2",
+    "vitest": "^1.4.0"
+  },
+  "exports": {
+    ".": "./dist",
+    "./source": "./dist/source/index.js",
+    "./pou": "./dist/pou/index.js",
+    "./template": "./dist/template/index.js",
+    "./types/primitives": "./dist/types/primitives/index.js",
+    "./types/utilities": "./dist/types/utilities/index.js",
+    "./types/complex": "./dist/types/complex/index.js",
+    "./internal/operations": "./dist/internal/operations/index.js",
+    "./internal/state-machines": "./dist/internal/state-machines/index.js",
+    "./language/ast": "./dist/language/ast/index.js",
+    "./language/base-behavior": "./dist/language/base-behavior/index.js",
+    "./language/st": "./dist/language/st/index.js",
+    "./operation": "./dist/operations/operation.js",
+    "./operations/unit": "./dist/operations/unit/index.js",
+    "./operations/program-control": "./dist/operations/program-control/index.js",
+    "./operations/basics": "./dist/operations/basics/index.js",
+    "./operations/math": "./dist/operations/math/index.js",
+    "./operations/binary": "./dist/operations/binary/index.js",
+    "./misc/interface-types": "./dist/misc/interface-types.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "./dist"
+  ],
+  "dependencies": {
+    "stacktrace-js": "^2.0.2",
+    "vite-tsconfig-paths": "^4.3.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@vifjs/language-server",
+  "version": "0.0.1-alpha.0",
+  "main": "out/index.js",
+  "license": "MIT",
+  "files": [
+    "out/**/*.js",
+    "out/**/*.d.ts"
+  ],
+  "bin": {
+    "vif-language-server": "./bin/vif-language-server.js"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.10",
+    "@volar/language-core": "~2.1.0",
+    "@volar/language-server": "~2.1.0",
+    "@volar/language-service": "~2.1.0",
+    "tsutils": "^3.21.0",
+    "volar-service-typescript": "volar-2.1",
+    "ws": "^8.16.0"
+  }
+}

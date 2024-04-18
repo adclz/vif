@@ -1,0 +1,63 @@
+{
+  "name": "@vifjs/task-runner",
+  "version": "0.0.1-alpha.0",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsc --build ./tsconfig.prod.json && tsc-alias",
+    "dev": "tsx ./src/main.ts",
+    "start": "node ./dist/index.js",
+    "notest": "tsc --build ./tsconfig.prod.json && tsc-alias && vitest --ui"
+  },
+  "exports": {
+    ".": "./dist",
+    "./runner": "./dist/index.js",
+    "./protocol": "./dist/protocol.js",
+    "./extern": "./dist/extern.js"
+  },
+  "dependencies": {
+    "@await/spawn": "^9.0.0",
+    "@vifjs/sim-node": "latest",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fancy-log": "^2.0.0",
+    "fs-ext": "^2.0.0",
+    "get-port": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-run": "^1.7.1",
+    "gulp-typescript": "6.0.0-alpha.1",
+    "gulp-watch": "^5.0.1",
+    "gulplog": "^2.0.1",
+    "launch-editor": "^2.6.1",
+    "node-cleanup": "^2.1.2",
+    "node-watch": "^0.7.4",
+    "tcp-port-used": "^1.0.2",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.1",
+    "uuid": "^9.0.1",
+    "vite-tsconfig-paths": "^4.3.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/cors": "^2.8.17",
+    "@types/deasync": "^0.1.5",
+    "@types/express": "^4.17.21",
+    "@types/fs-ext": "^2.0.3",
+    "@types/mocha": "^10.0.1",
+    "@types/proper-lockfile": "^4.1.4",
+    "@types/tcp-port-used": "^1.0.4",
+    "@types/uuid": "^9.0.7",
+    "@types/ws": "^8.5.10",
+    "chai": "^4.3.7",
+    "madge": "^6.0.0",
+    "mocha": "^10.2.0",
+    "typescript": "latest",
+    "vitest": "latest",
+    "@vifjs/s7-1200": "workspace:*"
+  }
+}

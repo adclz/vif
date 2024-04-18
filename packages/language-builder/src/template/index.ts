@@ -1,0 +1,1 @@
+﻿export {Template, Resolve, inner_ref_ast} from "@/src/template/template.js"

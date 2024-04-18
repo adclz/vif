@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "type": "module",
+  "name": "test",
+  "scripts": {
+    "main": "node ./tasks/main.js"
+  },
+  "dependencies": {
+    "@vifjs/sim-node": "latest",
+    "@vifjs/standard": "workspace:*",
+    "@vifjs/task-runner": "workspace:*",
+    "@vifjs/vif-ts-plugin": "workspace:*",
+    "node-watch": "latest",
+    "tsx": "^4.7.1",
+    "vite-tsconfig-paths": "latest",
+    "vitest": "latest"
+  },
+  "imports": {
+    "#source": "@vifjs/standard/source",
+    "#compiler": "@vifjs/standard/compiler",
+    "#pou": "@vifjs/standard/pou",
+    "#primitives": "@vifjs/standard/types/primitives",
+    "#complex": "@vifjs/standard/types/complex",
+    "#utilities": "@vifjs/standard/types/utilities",
+    "#unit": "@vifjs/standard/operations/unit",
+    "#program-control": "@vifjs/standard/operations/program-control",
+    "#basics": "@vifjs/standard/operations/basics",
+    "#math": "@vifjs/standard/operations/math",
+    "#binary": "@vifjs/standard/operations/binary"
+  },
+  "version": "0.0.1-alpha.0"
+}

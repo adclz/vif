@@ -1,0 +1,9 @@
+{
+  "socket_port": 5123,
+  "editor_port": 5111,
+  "program_pack": "@vifjs/1200-pack",
+  "watch": {
+    "folder": "test-code",
+    "compile": "test-code/main.ts"
+  }
+}
