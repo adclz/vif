@@ -5,7 +5,12 @@ outline: deep
 # Install
 
 ::: info
-Vif requires [Nodejs](https://nodejs.org/en) v18+
+Vif requires [Nodejs](https://nodejs.org/en) v20+
+:::
+
+::: warning
+Vif uses [tsx](https://github.com/privatenumber/tsx) to compiles Typescript code.
+There's a chance that tsx breaks depending on how node is configured on your machine.
 :::
 
 ## init-vif

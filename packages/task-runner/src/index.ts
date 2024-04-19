@@ -169,20 +169,20 @@ export const StartRunner = (fileName: string, options: { socketPort?: number, se
             let err = [];
             let data = null;
             const exec = child_process.spawn("node", [`--import tsx ${pipeData.runnerFile}`], {
-                shell: true,
-                cwd: process.cwd(),
-                stdio: ['ipc'],
-            })
-                .on("message", e => data = e)
-                .on("close", () => {
-                    if (err.length)
-                        reject(err.map(x => x.toString()).join("\n"));
-                    else
-                        resolve(data);
+                    shell: true,
+                    cwd: process.cwd(),
+                    stdio: ['ipc'],
                 })
-            exec.stderr.on("data", e => err.push(e))
+                    .on("message", e => data = e)
+                    .on("close", () => {
+                        if (err.length)
+                            reject(err.map(x => x.toString()).join("\n"));
+                        else
+                            resolve(data);
+                    })
+                exec.stderr.on("data", e => err.push(e))
 
-            cancellationToken.on("cancel", () => exec.kill(0))
+                cancellationToken.on("cancel", () => exec.kill(0))
         })
     }
     

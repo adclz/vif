@@ -463,11 +463,11 @@ file.
 
 ## Safety
 
-Since we working are with javascript, you might be wondering how vif handles low level types and makes sure operations are valid.
+Since we are working with javascript, you might be wondering how vif handles low level types and makes sure operations are valid.
 
 For basics cases, TypeScript type system is enough.
 
-For example you can't assign a number to a Boolean.
+For example, you can't assign a number to a Boolean.
 
 ```ts twoslash
 // @errors: 2345

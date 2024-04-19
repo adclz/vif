@@ -1,8 +1,8 @@
-import {Fb, InstanceDb, Ob} from "@vifjs/standard/pou"
-import {Instance} from "@vifjs/standard/types/complex";
-import {Call, Assign} from "@vifjs/standard/operations/basics";
-import {Bool} from "@vifjs/standard/types/primitives";
-import {BuildSource} from "@vifjs/standard/source";
+import {Fb, InstanceDb, Ob} from "@vifjs/s7-1200/pou"
+import {Instance} from "@vifjs/s7-1200/types/complex";
+import {Call, Assign} from "@vifjs/s7-1200/operations/basics";
+import {Bool} from "@vifjs/s7-1200/types/primitives";
+import {BuildSource} from "@vifjs/s7-1200/source";
 
 export const MyFb = new Fb({
     interface: {
@@ -36,5 +36,7 @@ BuildSource({
         "MyFb": MyFb,
         "Entry": Entry, 
         "MyBlocGb": InstanceDBFB
-}})
+}, monitor() {
+    return [this.MyBlocGb.input.test]
+},})
     .exportAsRunnable()
