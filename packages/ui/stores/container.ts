@@ -99,7 +99,7 @@ export const useContainer = defineStore({
                 })
 
                 plugin.on("messages", ev => {
-                    console.log(ev)
+                    //console.log(ev)
                     if (!this.error)
                         terminal.clear()
                     ev.forEach(x => terminal.writeln(x))
