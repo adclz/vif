@@ -29,7 +29,7 @@
     "@chialab/esbuild-plugin-meta-url": "^0.18.0",
     "@shikijs/vitepress-twoslash": "1.0.0-beta.0",
     "@vifjs/language-builder": "workspace:*",
-    "@vifjs/sim-web": "0.0.1-alpha.3",
+    "@vifjs/sim-web": "0.0.1-alpha.7",
     "@vifjs/standard": "workspace:^",
     "@vifjs/task-runner": "workspace:^",
     "esbuild-plugin-ignore": "^1.1.1",

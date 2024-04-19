@@ -6,7 +6,7 @@
     "main": "node ./tasks/main.js"
   },
   "dependencies": {
-    "@vifjs/sim-node": "latest",
+    "@vifjs/sim-node": "0.0.1-alpha.7",
     "@vifjs/standard": "workspace:*",
     "@vifjs/task-runner": "workspace:*",
     "@vifjs/vif-ts-plugin": "workspace:*",
