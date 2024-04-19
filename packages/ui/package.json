@@ -11,7 +11,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@vifjs/sim-web": "0.0.1-alpha.7",
+    "@vifjs/sim-web": "0.0.1-alpha.8",
     "@chialab/esbuild-plugin-meta-url": "^0.18.0",
     "@imengyu/vue-dock-layout": "^0.6.0",
     "@nuxtjs/pwa": "^3.3.5",
