@@ -17,6 +17,17 @@ StdCompiler.afterTransform("udt_impl", (udt_impl, compiler, options, prior) => {
     }
 })
 
+StdCompiler.afterTransform("instance", (instance, compiler, options, prior) => {
+    if (!prior) return prior
+    const varName = options.varName ? `${options.varName}` : ''
+    switch (instance.src.of) {
+        case "R_TRIG": return [`${varName ? `${varName} ` : ''}: R_TRIG;`]
+        case "F_TRIG": return [`${varName ? `${varName} ` : ''}: F_TRIG;`]
+        default: return prior
+    }
+        
+})
+
 StdCompiler.transform("local_ref", (ref, _compiler, _options) => {
     return [`${ref.src.path!.map((x, i) => (i !== 0 && !x.startsWith("[")) ? `.${x}` : x).join("")}`]
 })

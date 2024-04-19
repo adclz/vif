@@ -128,7 +128,7 @@ describe("Simulation primitives", async () => {
                         "		tp_q : Bool;",
                         "		f_trig : Bool;",
                         "		timer_instance : TP;",
-                        "		f_trig_instance : \"F_TRIG\";",
+                        "		f_trig_instance : F_TRIG;",
                         "	END_VAR",
                         "BEGIN",
                         "	timer_instance(",
