@@ -134,7 +134,7 @@ Before we go any further, i will assume you already have a knowledge of how Type
 
 - The simulations are real virtual plcs that work-out-of-box with minimal configuration and no setup required (Yes, the snippets inside this documentation are runtimes and not animations).
 
-You can see Vif as a feature-rich strong-typed structured plc code generator
+You can see Vif as a feature-rich strong-typed plc code generator.
 
 ## In practice
 
@@ -179,7 +179,7 @@ const elemtAtPosition3 = MyArray[3]
 But what if you want to declare more than 2 booleans ? For example 20 ?.
 :::
 
-Vif provides a method called "ArrayFrom" which serves this exact purpose.
+Vif provides a static method called "ArrayFrom" which serves this exact purpose.
 
 ```ts twoslash
 import {_Array, ArrayFrom} from "#complex"
@@ -197,7 +197,7 @@ Why is there a callback function instead of just declaring the type directly ?
 
 ArrayFrom allows you to control the way each variable of the array should be instanced.
 
-For example, if we want to set the default value of bools only when index is odd, we could do the following:
+For example, if we want to set the default value of booleans only when index is odd, we could do the following:
 
 ```ts twoslash
 import {_Array, ArrayFrom} from "#complex"
@@ -248,7 +248,7 @@ So far:
 - We make a new [Fb](/en/language/pou#fb).
 - We declare the section "static".
 - We declare a new variable inside static called "MyArrayOfBools".
-- This variable is an array of 20 bools and all odd indexes have "true" as a default value.
+- This variable is an array of 20 booleans and all odd indexes have **true** as a default value.
   :::
 
 ### Divide and rule
@@ -276,9 +276,9 @@ const MyFb = new Fb({
 })
 ```
 
-To finish this example, we will add an If block to our [Fb](/en/language/pou#fb).
+To finish this example, we will add an [If](/en/operations/program-control#If) block to our [Fb](/en/language/pou#fb).
 
-The If block will check if the first index of our first array equals the first index of our second array.
+The [If](/en/operations/program-control#If) block will check if the first index of our first array equals the first index of our second array.
 
 Of course this is not a real world use-case, but more a way to complete this example.
 
