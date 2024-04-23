@@ -120,7 +120,9 @@ Before we go any further, i will assume you already have a knowledge of how Type
 ## In summary
 
 - Vif is a programming language built on top of typescript which
-  generates [Structured text](https://en.wikipedia.org/wiki/Structured_text) code (or anything since anyone can build a compiler)
+  generates a pseudocode in JSON representing a plc program.
+
+- This code can then be transformed into [Structured text](https://en.wikipedia.org/wiki/Structured_text) code (or anything since anyone can build a compiler)
   for [Programmable Logic Controllers](https://en.wikipedia.org/wiki/Programmable_logic_controller "PLC").
 
 - Vif uses advanced features of typescript type system to make sure your code is safe.
@@ -128,9 +130,11 @@ Before we go any further, i will assume you already have a knowledge of how Type
 - It works on any IDE as far as this one supports Javascript / Typescript.
 
 - To make sure your code is really, really safe, Vif provides a simulator built with [WASM](https://webassembly.org/)
-  that works in both browser & node
+  that works in both browser & node.
 
-You can see Vif as as feature-rich strong-typed structured text code generator
+- The simulations are real virtual plcs that work-out-of-box with minimal configuration and no setup required (Yes, the snippets inside this documentation are runtimes and not animations).
+
+You can see Vif as a feature-rich strong-typed structured plc code generator
 
 ## In practice
 
